@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <QDate>
+//#include <QDate>
 
 int main()
 {
@@ -19,6 +19,13 @@ int main()
         }
         std::cout << "\n";
     }
+    int index = 7 % N;
+    int sum=0;
+    for (int j = 0; j < N; j++)
+    {
+        sum = sum + massiv[index][j];
+    }
+    std::cout << "Summa stroki po indeksu " << index << " ravno " << sum;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
